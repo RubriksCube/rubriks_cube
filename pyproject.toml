@@ -1,0 +1,22 @@
+[project]
+name = "rubriks_cube"
+version = "0.1.0"
+description = "Rubriks Cube"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jinja2>=3.1.6",
+    "jsonargparse[jsonnet,signatures]>=4.40.0",
+    "jsonlines>=4.0.0",
+    "pandas>=2.2.3",
+    "protobuf>=6.31.0",
+    "scikit-learn>=1.6.1",
+    "sentencepiece>=0.2.0",
+    "transformers>=4.51.2",
+]
+
+[project.optional-dependencies]
+inference = ["torch>=2.5.1", "vllm==0.7.3"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.5", "ruff>=0.11.10"]
