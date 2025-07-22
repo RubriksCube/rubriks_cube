@@ -1,4 +1,8 @@
 # Rubrik's Cube
+
+[![Static Badge](https://img.shields.io/badge/arXiv-2503.23899-b31b1b?logo=arXiv)](https://arxiv.org/abs/2503.23899)
+
+
 Repo for the paper "[Rubrik's Cube: Testing a New Rubric for Evaluating Explanations on the CUBE dataset](https://arxiv.org/abs/2503.23899)" (ACL 2025) by Diana Galvan-Sosa*, Gabrielle  Gaudeau*, Pride Kavumba, Yunmeng Li, Hongyi gu, Zheng Yuan, Keisuke Sakaguchi, Paula Buttery
 
 # News
