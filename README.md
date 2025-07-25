@@ -20,8 +20,59 @@ Repo for the paper "[Rubrik's Cube: Testing a New Rubric for Evaluating Explanat
 
 Currently, the directory contains explanations and evaluations for two of the three subsets (`annotation set` and `evaluation set`) described in the paper. We'll update it with the remaining subset soon.
 
-## Code
-- *Add description*
+## Installation
+
+### Install `uv`, a Fast Python Package Manager
+
+To install [`uv`](https://docs.astral.sh/uv/getting-started/), simply run:
+
+1. System-wide installation:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. From PyPI:
+```bash
+pip install uv
+```
+
+If you already have `uv`, make sure it’s up to date:
+
+```bash
+uv self update
+```
+
+
+
+### Ensure Python 3.11+ is Installed
+
+`uv` can help you install Python 3.11 or newer if needed:
+
+```bash
+uv python install 3.11
+```
+
+### Install Project Dependencies
+
+To install all project dependencies, run:
+
+```
+uv sync
+```
+
+### Install Local LLM Inference Dependencies
+
+If you plan to use the code for local LLM inference, install the extra dependencies (such as `torch` and `vllm`):
+
+```bash
+uv sync --extra inference
+```
+
+Run inference
+```bash
+uv run inference --config configs/mistral.jsonnet
+```
+
 
 # Citation
 ```bibtex
